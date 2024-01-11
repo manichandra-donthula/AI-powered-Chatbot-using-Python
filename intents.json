@@ -1,0 +1,370 @@
+{"intents":   [
+    {"tag":   "greetings",
+    "patterns": ["hi", "hello", "good day", "how is it going?", "what's up?", "greetings"], 
+    "responses": ["hello!", "hey!", "what can I do for you"]
+    },
+                        
+    {"tag":   "bye",
+    "patterns": ["bye", "good bye", "see you again!"],
+    "responses": ["bye", "ok bye", "see you again!", "ok! bye"]
+    },
+
+    {"tag":   "intro",
+    "patterns": ["what is machine learning?", "what is ml?", "define machine learning", "define ml"], 
+    "responses": ["Machine Learning is a concept which allows the machine to learn and improve from experience and examples without being explicitly programmed Supervised"]
+    },
+    
+    {"tag":   "types of machine learning",
+    "patterns": ["what are the types of machine learning?", "what are the available types of machine learning?"],
+    "responses": ["Types of machine learning are: 1.Supervised 2.Unsupervised 3.Semi–supervised 4.Reinforcement"]
+    },
+
+    {"tag":   "Supervised Learning",
+    "patterns": ["what is supervising learning?", "define supervised learning", "explain about supervised learning?"], 
+    "responses": ["A model is prepared through a training process in which it is required to make predictions and is corrected when those predictions are wrong. The training process continues until the model achieves a desired level of accuracy on the training data. red level of accuracy on the training data. Input data is called training data and has a known label or result such as spam/not-spam or a stock price at a time. Some practical examples of classification problems are: speech recognition, handwriting recognition, bio metric identification, document classification etc"]
+    },
+
+    {"tag":   "Supervised Learning solves",
+    "patterns": ["what type of problems do supervised learning solves?", "what type of problems can be solved by using linear regression"],
+    "responses": ["It solves classification and regression(linear)."]
+    },
+
+    {"tag":   "types of supervised learning",
+    "patterns": ["types of supervised learning","what are the types of supervised learning?", "what are the available types of supervised learning?"],
+    "responses": ["types of  are: 1.Regression 2.Classification "]
+    },
+
+    {"tag":   "regression",
+    "patterns": ["what is regression?", "define regression"], 
+    "responses": ["Machine Learning Regression is a technique for investigating the relationship between independent variables or features and a dependent variable or outcome. It's used as a method for predictive modelling in machine learning, in which an algorithm is used to predict continuous outcomes"]
+    },
+
+    {"tag":   "types of regression",
+    "patterns": ["what are the regression algorithms?", "types of regression algorihtms"],
+    "responses": ["types of regression are: 1.simple linear regression 2.multiple linear regression 3.polynomial 4.ridge 5.lasso"]
+    },
+
+    {"tag":   "classification",
+    "patterns": ["what is classification?", "define classification"],
+    "responses": ["Classification is a supervised machine learning method where the model tries to predict the correct label of a given input data. In classification, the model is fully trained using the training data, and then it is evaluated on test data before being used to perform prediction on new unseen data."]
+    },
+
+    {"tag":   "types of classification",
+    "patterns": ["what are the classification algorithms?", "types of classification algorihtms"],
+    "responses": ["types of classification are: 1.logisic regression 2. decision tree 3.bayes's theorem 4.knn 5.svm"]
+    },
+    
+    {"tag":  "linear regression",
+    "patterns": ["what is linear regression", "define linear regression"],
+    "responses": ["Linear regression is a supervised machine learning algorithm, uses predictive analysis to predict the value of variable based on value of another variable. Linear regression is a linear model, attempt to solve the regression problem by making the assumption that the dependent variable(y) is (at least to some approximation) a linear function of the independent variables(x1,x2…) i.e. model assumes a linear relationship between the input variables (x) and the single output variable (y) by fitting a best fit line "]
+},
+
+{"tag":  "linear regression algorithm",
+    "patterns": ["what is linear regression algorithm ", " deine linear regression algorithm","explain linear regression algoritm"],
+    "responses": [" Linear regression is a supervised machine learning algorithm, uses predictive analysis to predict the value of variable based on value of another variable. Linear regression is a linear model, attempt to solve the regression problem by making the assumption that the dependent variable(y) is (at least to some approximation) a linear function of the independent variables(x1,x2…). i.e. model assumes a linear relationship between the input variables (x) and the single output variable (y) by fitting a best fit line (regression line) Linear Equation can be represented as : Y = aX + b Where Y is dependent, X is independent variable, a is slope/model parameter and b is coeficient /bias parameter The variable which we want to predict known as dependent and the variable that we uses tp predict the other variable value known as independent variable Reg= linear_model.LinearRegression(…..)Regression can be simple linear regression or multiple linear regression • A single input variable (x), is used to predict the value of a dependent variable, such method is referred as simple linear regression. Y = b+aX • A multiple input variables are used to predict the value of a dependent variable such method is referred as multiple linear regression. Y = b +a1X1+a2X2+…. +anXn • The difference between the two is the number of independent variables. In both cases there is only a single dependent variable.  The core idea is to obtain a line that best fits the data. The best fit line is the one for which total prediction error (all data points) are as small as possible. Error is the difference between the actual value and Predicted value and the goal is to reduce this difference. For the equation:y=b0+b1xBest fit line can be generated by considering LSE or MSE Least squares error is the method used to find the best-fit line through a set of datapoints. The least squares error method minimises the square of errors between the actual datapoints and the line fitted. LSE is a method used during model fitting to minimise the sum of squares."]},
+
+{"tag":"mean square error",
+    "patterns":["what is mean square error"," define mean square error","explain mean square error"],
+    "responses":["Mean squared error: The Mean Squared Error measures how close a regression line is to a set of data points, is used once you have fitted the model and want to evaluate it. So, the mean squared error finds out the average of the difference between the actual and predicted values and, hence , is a good parameter to compare various models on the same data set. MSE is a metric used to evaluate the model after fitting the model, based on the average squared errors"]
+},
+
+
+    {"tag":"least square error",
+    "patterns":["what is least square error","difine least square error","explain least square error"],
+    "responses":["Least squares error is the method used to find the best-fit line through a set of datapoints. The least squares error method minimises the square of errors between the actual datapoints and the line fitted. LSE is a method used during model fitting to minimise the sum of squares."]},
+     
+    {"tag":"bestfit line",
+    "patterns":["define bestfit line","what is bestfit line"],
+    "responses":["The best fit line is the one for which total prediction error (all data points) are as small as possible. Error is the difference between the actual value and Predicted value and the goal is to reduce this difference. Best fit line can be generated by considering LSE or MSE"  
+    ]},
+
+    {"tag":"y=ax+b",
+    "patterns":["what is y ","what is x ","what is a ","what is b "],
+    "responses":["y is dependent","x if independent","a is slopr or mode or parameter","b is intercept or bias parameter"]
+    },
+
+    {"tag":"advantages of linear regression",
+    "patterns":["what are the advantages of linear regression","advantages of linear regression"],
+    "responses":["1. Linear Regression performs well when the dataset is linearly separable. We can use it to find the nature of the relationship among the variables.2. Linear Regression is easier to implement, interpret and very efficient to train. 3. Linear Regression is prone to over-fitting but it can be easily avoided using some dimensionality reduction techniques, regularization (L1 and L2) techniques and cross validation"]
+    },
+
+    {"tag":"disadvantages of linear regression",
+    "patterns":["what are the disadvantages of linear regression","disadvantages of linear regression","what is the drawbacks of linear regression","what are the major problems of linear regression"],
+    "responses":["1. Linear regression requires that the dependent variable is a continuous numerical variable 2. Linear Regression is limited to Linear Relationships between the dependent variable and the independent variables. In the real world, the data is rarely linearly separable. It assumes that there is a straight-line relationship between the dependent and independent variables which is incorrect many times. 3. Non-linear data cannot be well fitted. So you need to first determine whether the variables are linear."]
+    },
+
+    {"tag":"advantages and disadvantages of linear regression",
+    "patterns":["what are the advantages and disadvantages of linear regression","advantages and disadvantages of linear regression",""],
+    "responses":["Advantages of Linear Regression 1. Linear Regression performs well when the dataset is linearly separable. We can use it to find the nature of the relationship among the variables.2. Linear Regression is easier to implement, interpret and very efficient to train. 3. Linear Regression is prone to over-fitting but it can be easily avoided using some dimensionality reduction techniques, regularization (L1 and L2) techniques and cross validation. Disadvantages of Linear Regression1. Linear regression requires that the dependent variable is a continuous numerical variable2. Linear Regression is limited to Linear Relationships between the dependent variable and the independent variables. In the real world, the data is rarely linearly separable. It assumes that there is a straight-line relationship between the dependent and independent variables which is incorrect many times.3. Non-linear data cannot be well fitted. So you need to first determine whether the variables are linear."]
+    },
+
+    {"tag":   "logistic regression",
+    "patterns": ["what is regression?", "define logistic regression"],
+    "responses": ["Logistic regression is a supervised learning classification algorithm used to predict the probability of a target variable. The nature of target or dependent variable is dichotomous, which means there would be only two possible classes.", "Logistic regression is a supervised machine learning algorithm mainly used for classification tasks where the goal is to predict the probability that an instance of belonging to a given class. It is used for classification algorithms its name is logistic regression. it’s referred to as regression because it takes the output of the linear regression function as input and uses a sigmoid function to estimate the probability for the given class."]
+    },
+        
+    {"tag":   "types of logistic regression",
+    "patterns": ["what are the types of logistic regression algorithms?", "types of logistic regression"],
+    "responses": ["There are three main types of logistic regression: 1.binary or binomial 2.multinomial 3.ordinal."]
+    },
+        
+    {"tag":   "Binary Logistic Regression",
+    "patterns": ["what is binomial logistic regression?", "define binomial logistic regression", "binomial logistic regression", "what is binary logistic regression?", "define binary logistic regression", "binary logistic regression"],
+    "responses": ["Binary Logistic Regression (Pass /Fail ,Yes /No, True/False …) a. The categorical response has only two 2 possible outcomes. b. Example: Spam or Not"]
+    },
+  
+    {"tag":   "Multinomial Logistic Regression",
+    "patterns": ["what is multinomial logistic regression?", "define multinomial logistic regression", "multinomial logistic regression"],
+    "responses": ["Multinomial Logistic Regression a. Three or more categories without ordering. b. Example: Predicting animal from the given data(Cat, Dog, Sheep,…)"]
+    },
+            
+    {"tag":   "Ordinal Logistic Regression",
+    "patterns": ["what is ordinal logistic regression?", "define ordinal logistic regression", "ordinal logistic regression"], 
+    "responses": ["In ordinal Logistic regression, there can be 3 or more possible ordered types of dependent variables, such as low, Medium, or High"]
+    },
+            
+    {"tag":"desicion tree",
+    "patterns":["what is decision tree","define decision tree","explain decision tree"],
+    "responses":["Decision Tree is a supervised learning technique that can be used for both classification and Regression problems, but mostly it is preferred for solving Classification problems. It is a tree-structured classifier, where internal nodes represent the features of a dataset, branches represent the decision rules and each leaf node represents the outcome.In a Decision tree, there are two nodes, which are the Decision Node and Leaf Node. Decision nodes are used to make any decision and have multiple branches, whereas Leaf nodes are the output of those decisions and do not contain any further branches.It is a graphical representation for getting all the possible solutions to a problem/decision based on given conditions"]
+ 
+ },
+ 
+ 
+ {"tag":"advantages of decision tree",
+    "patterns":["what are the advantages of decision tree","merits of decision tree","pros of decision tree"],
+    "responses":["Decision tree is effective and is very simple. DT can be used while dealing with the missing values in the dataset. DT can take care of numeric as well as categorical features. Results that are generated from DT does not require any statistical or mathematics knowledge to be explained."]
+ 
+ },
+ 
+ {"tag":"disadvatages of decision tree",
+    "patterns":["what are the disadvantages of decision tree","disadvantages of decision tree","demerits of decision tree","cons of decision tree"],
+    "responses":["Logics get transformed if there are even small changes in training data. Larger trees get difficult to interpret. Biased towards tree having more levels."]
+ 
+ },
+ {"tag":"algorithm of decision tree",
+    "patterns":["decision tree algorithm","write the algorithm for decision tree","steps of decsion tree algorithm"],
+    "responses":["Select the best attribute using Attribute Selection Measures (ASM) to split the records. Make that attribute a decision node and breaks the dataset into smaller subsets. Repeat step 1 and step 2 on each subset until you find leaf nodes in all the branches of the tree, i.e, starts tree building by repeating this process recursively for each child until one of the condition will match: All the tuples belong to the same attribute value. There are no more remaining attributes. There are no more instances."]
+ 
+ },
+ {"tag":"attribute selection measure",
+    "patterns":["how to select attribute in decision tree","attribute selection measure ","measure for attribute selection "],
+    "responses":["While implementing a Decision tree, the main issue arises that how to select the best attribute for the root node and for sub-nodes. So, to solve such problems there is a technique which is called as Attribute selection measure or ASM.By this measurement, we can easily select the best attribute for the nodes of the tree. There are two popular techniques for ASM, which are: Information Gain, Gini Index"]
+ 
+ },
+ {"tag":"terminologies of decision tree",
+    "patterns":["what are the nodes in decision tree","terminologies of decision tree","types of nodes in decision tree"],
+    "responses":["Root Node: Root node is from where the decision tree starts. It represents the entire dataset, which further gets divided into two or more homogeneous sets. Leaf Node: Leaf nodes are the final output node, and the tree cannot be segregated further after getting a leaf node. Splitting: Splitting is the process of dividing the decision node/root node into sub-nodes according to the given conditions. Branch/Sub Tree: A tree formed by splitting the tree. Pruning: Pruning is the process of removing the unwanted branches from the tree. Parent/Child node: The root node of the tree is called the parent node, and other nodes are called the child nodes."]
+ 
+ },
+ {"tag":"types of algorithms in decision tree",
+    "patterns":["what are the types of algorithms in decision tree",""],
+    "responses":["CART ALGORITHM (classification and regression tree algorithm)","gini index or id-3 iterative dichotomister 3","c4.5 (information gain)"]
+ 
+ },
+ {"tag":"leaf node ",
+    "patterns":["define leaf node ","define leaf node","leaf node in decision tree"],
+    "responses":[": Leaf nodes are the final output node, and the tree cannot be segregated further after getting a leaf node."]
+ 
+ },
+ {"tag":"root node ",
+    "patterns":["define root node","what is root node","root node in decision tree"],
+    "responses":["Root node is from where the decision tree starts. It represents the entire dataset, which further gets divided into two or more homogeneous sets"]
+ 
+ },
+ {"tag":"sub tree",
+   "patterns":["define subtree","define branch","what is sub tree"],
+   "responces":[" A tree formed by splitting the tree."]
+ },
+ {"tag":"splitting",
+   "patterns":["define splitting ","what is splitting"],
+   "responces":["Splitting is the process of dividing the decision node/root node into sub-nodes according to the given conditions."]
+ },
+ {"tag":"pruning",
+   "patterns":["define pruning","what is pruning","explain pruning","pruning", "pruning?"],
+   "responces":["pruning is the process of removing the unwanted branches from the tree."]
+ },
+ {"tag":"parent node/child node",
+   "patterns":["define parent node","what is parent node","what is child node","define child node"],
+   "responces":[": The root node of the tree is called the parent node, and other nodes are called the child nodes. "]
+ },
+ {"tag":"formula for decision tree",
+   "patterns":["write the formula for decision tree","formule for decision tree","what is the formula for decision tree"],
+   "responces":["-p(x).log p(x)"]
+ },
+            
+    {"tag":   "Bayes Theorem",
+    "patterns": ["what is bayes theorem?", "define bayes theorem", "what is Naive Bayes classifier?", "define Naive Bayes classifier"],
+    "responses": ["provides a principled way for calculating a conditional probability named after Thomas Bayes, describes the probability of an event, based on prior knowledge of conditions that might be related to the event models for classification predictive modeling problems such as the Bayes Optimal Classifier and Naive Bayes."]
+    },
+            
+    {"tag":   "Types of bayes theorem",
+    "patterns": ["what are the types of bayes theorem?", "what are the types of navie bayes classifier?"], 
+    "responses": ["Types of Naive Bayes classifier or bayes theorem are: 1.Gaussian Naive Bayes classifier, 2.Multinomial Naive Bayes classifier, 3.Bernoulli Naive Bayes classifier."]
+    },
+                
+    {"tag":"KNN",
+    "patterns":["what is stands for KNN","what is kNN","define KNN" ],
+    "responces":["k-nearest neighber", "it is a non parametric supervised machine learning algorithm uses proximity to make classification or predictions it solves both classification and regression"]
+  },
+
+  {"tag":"KNN algorithm",
+  "patterns":["explain about KNN algorithm","write about KNN algorithm"],
+  "responces":["Step-1: Select the number K of the neighbors Step-2: Calculate the Euclidean distance of K number of neighborsStep-3: Take the K nearest neighbors as per the calculated Euclidean distance. Step-4: Among these k neighbors, count the number of the data points in each category. Step-5: Assign the new data points to that category for which the number of the neighbor is maximum. Step-6: Our model is ready."] 
+  },
+                
+    {"tag":   "Support Vector Machine",
+    "patterns": ["what is Support Vector Machine?", "define Support Vector Machine"], 
+    "responses": ["Support Vector Machine or SVM is one of the most popular Supervised Learning algorithms, which is used for Classification as well as Regression problems. However, primarily, it is used for Classification problems in Machine Learning. The goal of the SVM algorithm is to create the best line or decision boundary that can segregate n-dimensional space into classes so that we can easily put the new data point in the correct category in the future. This best decision boundary is called a hyperplane"]
+    },
+                
+    {"tag":   "types of Support Vector Machine",
+    "patterns": ["what are the types of support vector machine?", "types of support vector machine"], 
+    "responses": ["Types of Support Vector Machine are: 1.Linear SVM 2.Non-linear SVM"]
+    },
+                    
+    {"tag":   "unsupervised learning",
+    "patterns": ["what is unsupervising learning?", "define unsupervised learning", "unsupervised learning"], 
+    "responses": ["Input data is not labeled and does not have a known result. A model is prepared by deducing structures present in the input data. This may be to extract general rules. It may be through a mathematical process to systematically reduce redundancy, or it may be to organize data by similarity."]
+    },
+                        
+    {"tag":   "types of unsupervised learning",
+    "patterns": ["what are the types of unsupervised learning?", "types of unsupervised learning"], 
+    "responses": ["types of supervised are: 1.Clustering 2.Association rule 3.Dimensionality Reduction"]
+    },                        
+    {"tag":   "clustering",
+    "patterns": ["what is clustering?", "define clustering", "clustering"], 
+    "responses": ["Clustering is unsupervised learning technique, we try to group the data points based on specific characteristics i.e. data points are divided into a number of groups such that data points in the same groups are more similar to other data points in the same group and dissimilar to the data points in other groups. data points that are in the same group should have similar properties and/or features, While data points in different groups should have highly dissimilar properties and/or features. Clustering is a method of unsupervised learning and is a common technique for statistical data analysis used in many fields."]
+    },
+                        
+    {"tag":   "types of clustering",
+    "patterns": ["what are the types of clustering?", "types of clustering"], 
+    "responses": ["Clustering can be divided into two subgroups : 1. Hard Clustering 2.Soft Clustering"]
+    },
+                        
+    {"tag":   " Hard Clustering",
+    "patterns": ["what is Hard Clustering?", "explain Hard Clustering", "define Hard Clustering"], 
+    "responses": ["In hard clustering, each data point either belongs to a cluster completely or not."]
+    },
+                        
+    {"tag":   "Soft Clustering",
+    "patterns": ["what is Soft Clustering?", "explain Soft Clustering", "define Soft Clustering"], 
+    "responses": ["Soft Clustering: In soft clustering, instead of putting each data point into a separate cluster, a probability or likelihood of that data point to be in those clusters is assigned."]
+    },
+                        
+    {"tag":   "algorithms on clustering",
+    "patterns": ["what are the available alogithms in clustering?", "algorithms in clustering"], 
+    "responses": ["The more popular algorithms is as follows: 1. Agglomerative Clustering 2. BIRCH 3. DBSCAN 4. K-Means 5. Mini-Batch K-Means 6. OPTICS 7. Spectral Clustering 8. Mixture of Gaussians"]
+    },
+                            
+    {"tag":   "algorithm of clustering",
+    "patterns": ["explain algorithm of clustering?", "algorithm of clustering", "clustering algorithm"], 
+    "responses": ["Clustering is an unsupervised machine learning task that involves the grouping of data points into a specific group based on similar properties and/or features.1 The K-means clustering algorithm is the simplest unsupervised clustering algorithm and partitions n observations into k clusters where each observation belongs to the cluster with the nearest mean serving as a prototype."]
+    },                    
+                            
+    {"tag":   "methods of clustering",
+    "patterns": ["what are different clustering methods?", "list different clustering methods", "different clustering methods"], 
+    "responses": ["Clustering methods are: 1.Density-Based Methods 2.Hierarchical Based Methods 3. Partitioning Methods 4.Grid-based Methods"]
+    },
+                           
+    {"tag":   "Density-Based Methods",
+    "patterns": ["explain Density-Based Methods", "what are Density-Based Methods?", "Density-Based Methods"], 
+    "responses": [" These methods consider the clusters as the dense region having some similarity and different from the lower dense region of the space. These methods have good accuracy and ability to merge two clusters. Example DBSCAN (Density-Based Spatial Clustering of Applications with Noise) , OPTICS (Ordering Points to Identify Clustering Structure) etc."]
+    },
+                               
+    {"tag":   "Hierarchical Based Methods",
+    "patterns": ["explain Hierarchical Based Methods ", "what are Hierarchical Based Methods?", "Hierarchical Based Methods"], 
+    "responses": ["The clusters formed are represented as a tree (or dendrogram). The root of the tree is the unique cluster that gathers all the samples, the leaves being the clusters with only one sample . It divided into two category Agglomerative (bottom up approach) Divisive (top down approach) examples : CURE (Clustering Using Representatives), BIRCH (Balanced Iterative Reducing Clustering and using Hierarchies) etc."]
+    },
+                               
+    {"tag":   "Partitioning Methods",
+    "patterns": ["explain Partitioning Methods", "what are Partitioning Methods?", "Partitioning Methods"], 
+    "responses": ["These methods partition the objects into k clusters and each partition forms one cluster. This method is used to optimize an objective criterion similarity function such as when the distance is a major parameter example K-means, CLARANS (Clustering Large Applications based upon Randomized Search) etc."]
+    },
+                               
+    {"tag":   "Grid-based Methods",
+    "patterns": ["explain Grid-based Methods", "what are Grid-based Methods?", "Grid-based Methods"], 
+    "responses": ["In this method the data space is formulated into a finite number of cells that form a grid-like structure. All the clustering operation done on these grids are fast and independent of the number of data objects example STING (Statistical Information Grid), wave cluster, CLIQUE (CLustering In Quest) etc."]
+    },
+
+    {"tag": "k-means",
+    "patterns": ["define k-means","what is k-means","k-means"], 
+    "responses": ["K-means is a centroid-based algorithm or a distance-based algorithm, calculate the distances and assign data point to closest cluster."]
+    },
+
+    {"tag": "explain k-means",
+    "patterns": ["explain about k-means","explain breifly about k-means"], 
+    "responses": ["K-means is a centroid-based algorithm or a distance-based algorithm, calculate the distances and assign data point to closest cluster. In K-Means, each cluster is associated with a centroid. K-Means algorithm minimize the sum of distances between the points and their respective cluster centroid .K –Means is Hard clustering, Partition algorithm method. K –Means is unsupervised machine learning algorithm (make inferences from datasets using only input vectors without referring to known, or labeled, outcomes )"]
+    },
+
+    {"tag": "k-means Algorithm",
+    "patterns": ["write about k-means algorithm","explain k-means algorithm"], 
+    "responses": ["Step 1: Choose the number of clusters k.The first step in k-means is to pick the number of clusters, Step 2 : Select k random points from the data as centroids Next, we randomly select the centroid for each cluster. Let‟s say we want to have 2 clusters, so k is equal to 2 here. We then randomly select the centroid, Here, the red and green circles represent the centroid for these clusters. Step 3: Assign all the points to the closest cluster centroid  Once we have initialized the centroids, we assign each point to the closest cluster centroid Here you can see that the points which are closer to the red point are assigned to the red cluster whereas the points which are closer to the green point are assigned to the green cluster .Step 4: Recompute the centroid of newly formed clusters Now, once we have assigned all of the points to either cluster, the next step is to compute the centroids of newly formed clusters:Here, the red and green crosses are the new centroids. Repeat steps 3 and 4 until there is no change to the centroids. i.e assignment of data points to clusters isn‟t changing."]
+    },
+
+    {"tag":"DBSCAN",
+    "patterns": ["what is DBSCAN","Define dbscan"], 
+    "responses": ["DBSCAN is a unsupervised machine learning algorithm, that identify various clusters in data, based on idea that cluster in data space are contiguous region of high density separated from other clusters by contiguous region of low density point"]
+    },
+
+    {"tag":  "explain dbscan",
+    "patterns": ["write explain about dbscan","explain about dbscan"], 
+    "responses": ["DBSCAN is a unsupervised machine learning algorithm, that identify various clusters in data, based on idea that cluster in data space are contiguous region of high density separated from other clusters by contiguous region of low density point i.e., clusters of high dense regions in space separated by regions of lower density. DBSCAN clustering is robust to outliers and helps to detect clusters that are irregular shape DBSCAN requires two parameters: epsilon and minPoints. Epsilon is the radius of the circle to be created around each data point to check the density minPoints is the minimum number of data points required inside that circle for that data point to be classified as a Core point"]
+    },
+
+    {"tag":   "types of dbscan",
+    "patterns": ["what are the dbscan types", "write the types of dbscan"], 
+    "responses": ["epsilon and min point"]
+    },
+
+    {"tag":   "dbscan classif points",
+    "patterns": ["what are the dbscan clasify points","write the classifications of dbscan"], 
+    "responses": ["core point and noise point and border point"]
+    },
+
+    {"tag":   "hierarchical clustering",
+    "patterns": ["what is hierarchical clustering","define hierarchical clustering"], 
+    "responses": ["Unsupervised machine learning algorithm, used to group unlabeled datasets into a cluster, so that objects within a group are similar to each other and different from objects in other groups. Clusters are visually represented in a hierarchical tree called a dendrogram. i.e. building a hierarchy of clusters"]
+    },
+
+    {"tag":   "types of hierarchical clustering ",
+    "patterns": ["what are the types of hierarchical clustering ","types of hierarchical clustering"], 
+    "responses": ["Agglomerative hierarchical clustering ( bottom up approach) Divisive Hierarchical clustering ( top down approach)"]
+    },
+
+    {"tag":   "Agglomerative Hierarchical Clustering (n- cluster to single cluster)",
+    "patterns": ["explain about Agglomerative Hierarchical Clustering "], 
+    "responses": ["The Agglomerative Hierarchical Clustering is the most common type of hierarchical clustering used to group objects in clusters based on their similarity. It‟s also known as AGNES (Agglomerative Nesting). It's a “bottom-up” approach: each observation starts in its own cluster, and pairs of clusters are merged as one moves up the hierarchy.  We assign each point to an individual cluster in this technique. Suppose there are 4 data points. We will assign each of these points to a cluster and hence will have 4 clusters in the beginning:  Then, at each iteration, we merge the closest pair of clusters and repeat this step until only a single cluster is left:  We are merging (or adding) the clusters at each step, right? Hence, this type of clustering is also known as additive hierarchical clustering."]
+    },
+
+    {"tag":   "Divisive Hierarchical Clustering (single cluster to n- cluster)",
+    "patterns": ["explain about Divisive Hierarchical Clustering"], 
+    "responses": ["Divisive hierarchical clustering works in the opposite way. Instead of starting with n clusters (in case of n observations), we start with a single cluster and assign all the points to that cluster.  So, it doesn‟t matter if we have 10 or 1000 data points. All these points will belong to the same cluster at the beginning  Now, at each iteration, we split the farthest point in the cluster and repeat this process until each cluster only contains a single point  We are splitting (or dividing) the clusters at each step, hence the name divisive hierarchical clustering."]
+    },
+
+    {"tag":   "hierarchical clustering algorithm",
+    "patterns": ["write an algorithm for hierarchical clustering","explain about hierarchical clustering algorithm"], 
+    "responses": ["First, we assign all the points to an individual cluster: Step 2: Next, we will look at the smallest distance in the proximity matrix and merge the points with the smallest distance. Later we then update the proximity matrix: Here, the smallest distance is 3 and hence we will merge point 1 and 2 Step 3: repeat step 2 until only a single cluster is left. Creating a Proximity Matrix First, we will create a proximity matrix which will tell us the distance between each of these points. Since we are calculating the distance of each point from each of the other points, we will get a square matrix of shape n X n (where n is the number of observations). Let‟s make the 5 x 5 proximity matrix for our example: Formulae to calculate distance (Manhattan) √((x2-x1)^2+ ((y2-y1)^2)"]
+    },
+
+                        
+    {"tag":   "Reinforcement Learning",
+    "patterns": ["what is Reinforcement Learning?", "define Reinforcement Learning", "Reinforcement Learning"], 
+    "responses": ["The machine is trained to make specific decisions. It trains itself continually using trial and error. This machine learns from past experience and tries to capture the best possible knowledge to make accurate business decisions."]
+    },
+
+                        
+    {"tag":   "types of Reinforcement Learning",
+    "patterns": ["what are the types of Reinforcement Learning?", "define Reinforcement Learning"], 
+    "responses": ["Types of Reinforcement Learning are: 1.Q Learning 2.Deep Q network"]
+    },
+                        
+    {"tag":   "Q Learning",
+    "patterns": ["what is Q Learning?", "explain Q Learning", "Q Learning"], 
+    "responses": ["Q-learning is a reinforcement learning technique used in machine learning. It is model-free and does not require a model of the environment to handle problems with stochastic transitions and rewards. The goal of Q-Learning is to learn a policy, which tells an agent which action to take under which circumstances."]
+    },
+                        
+    {"tag":   "Deep Q network",
+    "patterns": ["what is Deep Q network?", "explain Deep Q network", "Deep Q network"], 
+    "responses": ["A Deep Q-Network (DQN) is a type of reinforcement learning algorithm that uses a deep neural network to approximate the Q-function, which represents the expected cumulative reward of taking a certain action in a certain state and following a certain policy. DQNs are normally convolutional and are updated iteratively as the agent interacts with the environment."]
+    }
+]}
